@@ -46,7 +46,7 @@ a {
 }
 
 #navbar li a {
-    transition: color 0.25s;
+    transition: color 0.5s;
 }
 
 #navbar li a:hover {
@@ -103,7 +103,7 @@ a {
     justify-content: space-evenly;
 }
 
-#address,
+#address-wrap,
 #form-wrap {
     height: 400px;
     display: flex;
@@ -111,7 +111,8 @@ a {
     justify-content: space-between;
 }
 
-#form-wrap form {
+#form-wrap form,
+#address-wrap .address-content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -138,23 +139,23 @@ a {
 
 #form-wrap form button {
     width: 70px;
-    font-size: 15px;
     height: 30px;
+    font-size: 15px;
     padding-left: 0;
     cursor: pointer;
 }
 
-#address .title,
-#form .title {
+#address-wrap .title,
+#form-wrap .title {
     justify-content: start;
 }
 
-#address iframe {
+#address-wrap iframe {
     border-radius: 10px;
     transition: opacity 0.5s;
 }
 
-#address iframe:hover {
+#address-wrap iframe:hover {
     opacity: 0.8;
 }
 
