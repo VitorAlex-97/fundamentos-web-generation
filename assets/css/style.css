@@ -1,0 +1,178 @@
+/*Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: rgb(240, 243, 240);
+}
+
+body {
+    background-color: rgb(15, 20, 19);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap {
+    margin: 0 30px;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgb(30, 31, 30);
+    font-size: 20px;
+    line-height: 20px;
+    padding: 20px;
+}
+
+#navbar ul,
+#navbar ul li {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+#navbar ul li {
+    flex-direction: column;
+}
+
+#navbar li a {
+    transition: color 0.25s;
+}
+
+#navbar li a:hover {
+    color: rgb(147, 98, 196);
+    /*rebeccapurple*/
+}
+
+.title {
+    display: flex;
+    justify-content: start;
+    font-size: 30px;
+    border-bottom: 1px solid rebeccapurple;
+}
+
+#navbar li {
+    margin: 10px;
+}
+
+#about-me {
+    display: flex;
+    margin: 50px 50px;
+}
+
+#about-me .descrition {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 10px;
+}
+
+#about-me img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+#music {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px;
+}
+
+#music .title {
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+#info {
+    height: 76vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#address,
+#form-wrap {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#form-wrap form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 350px;
+}
+
+#form-wrap form input,
+#form-wrap form textarea,
+#form-wrap form button {
+    background-color: rebeccapurple;
+    border: none;
+    padding-left: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 100%;
+    transition: background-color 0.5s;
+}
+
+#form-wrap form input:focus,
+#form-wrap form textarea:focus,
+#form-wrap form button:hover {
+    background-color: rgb(147, 98, 196);
+}
+
+#form-wrap form button {
+    width: 70px;
+    font-size: 15px;
+    height: 30px;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+#address .title,
+#form .title {
+    justify-content: start;
+}
+
+#address iframe {
+    border-radius: 10px;
+    transition: opacity 0.5s;
+}
+
+#address iframe:hover {
+    opacity: 0.8;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(30, 31, 30);
+
+    padding: 30px;
+    border-top: 1px solid rgb(61, 61, 61);
+}
+
+footer a {
+    color: rebeccapurple;
+    transition: color 0.5s;
+}
+
+footer a:hover {
+    color: rgb(147, 98, 196);
+}
