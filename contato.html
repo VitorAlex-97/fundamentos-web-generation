@@ -5,61 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu perfil - Contato</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <ul>
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-        <li>
-            <a href="contato.html">Contato</a>
-        </li>
-    </ul>
-
-    <hr>
-    <h1>Entre em contato comigo</h1>
-
-    <form>
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="assunto">Assunto:</label><br>
-        <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
-
-    <hr>
-    <h2>Endereço</h2>
-    <p>Praça de Jardim São Paulo</p>
-    <p>Recife - PE</p>
-
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1975.0972843639884!2d-34.93927522819991!3d-8.0816296659096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1ebb2222dfa3%3A0xb00174ed225cc641!2sPra%C3%A7a%20de%20Jardim%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1637689087633!5m2!1spt-BR!2sbr" 
-        width="400" 
-        height="250" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy"
-    ></iframe>
-
-    <hr>
-    <h2>Redes Sociais</h2>
-    <footer>
-        <ul>
+    <nav id="navbar">
+        <ul class="wrap">
             <li>
-                <a href="https://github.com/VitorAlex-97" target="_blank">GitHub</a>
+                <a href="index.html">Home</a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/vitor-alex-8aab38209/" target="_blank">LinkedIn</a>
+                <a href="contato.html">Contato</a>
             </li>
         </ul>
+    </nav>
+
+    <section id="info">
+        <div id="form-wrap">
+            <h1 class="title">Entre em contato comigo</h1>
+    
+            <form>
+                <div>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome">
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email">
+                </div>
+                
+                <div>
+                    <label for="assunto">Assunto:</label><br>
+                    <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+                </div>
+            
+                <button>Enviar</button>
+            </form>
+        </div>
+    
+        <div id="address">
+            <h2 class="title">Endereço</h2>
+            
+            <div>
+                <p>Praça de Jardim São Paulo</p>
+                <p>Recife - PE</p>
+            </div>
+            
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1975.0972843639884!2d-34.93927522819991!3d-8.0816296659096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1ebb2222dfa3%3A0xb00174ed225cc641!2sPra%C3%A7a%20de%20Jardim%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1637689087633!5m2!1spt-BR!2sbr" 
+                width="380" 
+                height="230" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+            ></iframe>
+            
+        </div>
+    </section>
+
+    <footer>
+        <h3>Desenvolvido por <a href="https://www.linkedin.com/in/vitor-alex-8aab38209/" target="_blank">Vitu</a></h3>
     </footer>
 </body>
 </html>
